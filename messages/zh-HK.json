@@ -1,0 +1,30 @@
+{
+  "HomePage": {
+    "title": "你好世界!",
+    "goToAbout": "前往關於頁面"
+  },
+  "AboutPage": {
+    "title": "這是 Next.js 15 App Router 與 next-intl 的示範，處理i18n。",
+    "goToHome": "返回主頁"
+  },
+  "Metadata": {
+    "title": "Next.js 15 與 next-intl",
+    "homePage": {
+      "title": "主頁"
+    },
+    "aboutPage": {
+      "title": "關於"
+    },
+    "notFoundPage": {
+      "title": "頁面不存在"
+    }
+  },
+  "NotFoundPage": {
+    "title": "頁面不存在",
+    "message": "您要尋找的頁面不存在。",
+    "backToHome": "返回主頁"
+  },
+  "Error": {
+    "title": "發生錯誤"
+  }
+}

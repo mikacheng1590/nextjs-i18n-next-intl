@@ -1,0 +1,30 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "goToAbout": "Go to the about page"
+  },
+  "AboutPage": {
+    "title": "This is a demonstration of the Next.js 15 App Router with next-intl for i18n.",
+    "goToHome": "Go to the home page"
+  },
+  "Metadata": {
+    "title": "Next.js 15 x next-intl",
+    "homePage": {
+      "title": "Home"
+    },
+    "aboutPage": {
+      "title": "About"
+    },
+    "notFoundPage": {
+      "title": "Page not found"
+    }
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "message": "The page you are looking for does not exist.",
+    "backToHome": "Go to the home page"
+  },
+  "Error": {
+    "title": "An error occurred"
+  }
+}
