@@ -5,10 +5,11 @@ import { useEffect } from "react";
 
 interface IError {
   error: Error;
-  reset(): void;
 };
 
-export default function Error({error, reset}: IError) {
+export default function Error({
+  error
+}: IError) {
   const t = useTranslations("Error");
 
   useEffect(() => {

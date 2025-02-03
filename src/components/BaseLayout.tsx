@@ -22,7 +22,9 @@ export default async function BaseLayout({
   locale
 }: IBaseLayout) {
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  const locales: readonly string[] = routing.locales;
+
+  if (!locales.includes(locale)) {
     notFound();
   }
 
