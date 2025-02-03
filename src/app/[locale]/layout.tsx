@@ -1,17 +1,10 @@
 import { getTranslations } from "next-intl/server";
-import { ReactNode } from "react";
 import BaseLayout from "@/components/BaseLayout";
-
-interface ILayout {
-  children: ReactNode;
-  params: {
-    locale: string
-  };
-};
+import { ILayoutParams } from "@/types/pages";
 
 export async function generateMetadata({
   params
-}: Omit<ILayout, "children">) {
+}: Omit<ILayoutParams, "children">) {
   const { locale } = await params;
   const t = await getTranslations({
     locale,
@@ -26,7 +19,7 @@ export async function generateMetadata({
 export default async function Layout({
   children,
   params
-}: ILayout) {
+}: ILayoutParams) {
   const { locale } = await params;
 
   return <BaseLayout locale={locale}>{children}</BaseLayout>;

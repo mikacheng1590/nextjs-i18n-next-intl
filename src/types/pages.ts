@@ -1,7 +1,11 @@
+import { ReactNode } from "react";
+
 interface IPageParams {
-  params: {
-    locale: string
-  }
+  params: Promise<{ locale: string }>
+}
+
+export interface ILayoutParams extends IPageParams {
+  children: ReactNode;
 }
 
 export default IPageParams;
